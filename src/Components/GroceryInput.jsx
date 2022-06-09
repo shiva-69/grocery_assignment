@@ -1,5 +1,5 @@
 import React from 'react'
-
+import "../styles/GroceryInput.css"
 const GroceryInput = ({handleAdd}) => {
     const [inputvalue, setInputValue] = React.useState("");
 

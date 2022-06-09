@@ -25,7 +25,7 @@ const Grocery = () => {
 
 
     return <>
-    <h1>Grocery</h1>
+    <h1 style={{marginTop:"0", paddingTop: "1.5%"}}>Grocery App</h1>
     <GroceryInput handleAdd={handleAdd} />
     <GroceryList list ={list} handleDelete={handleDelete}/>
     </>
