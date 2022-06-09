@@ -7,7 +7,6 @@ import {v4 as uuid} from "uuid";
 const Grocery = () => {
     const [list, setList] = React.useState([]);
 
-
     const handleAdd = (value) => {
         const payload = {
             value,
@@ -17,12 +16,10 @@ const Grocery = () => {
         setList(updatedList);   
     }
 
-
     const handleDelete = (id) => {
         const updatedList = list.filter((item)=> item.id !== id);
         setList(updatedList);
     }
-
 
     return <>
     <h1 style={{marginTop:"0", paddingTop: "1.5%"}}>Grocery App</h1>
@@ -31,6 +28,5 @@ const Grocery = () => {
     </>
 
 }
-
 
 export {Grocery}
