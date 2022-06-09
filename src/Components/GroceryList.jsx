@@ -5,8 +5,10 @@ const GroceryList = ({list, handleDelete}) => {
     <>
         {list.map((item) =>{
             return <>
-                <h1 key={item.id}> {item.value}</h1>
-                <button  onClick={(e)=> handleDelete(item.id)}>Delete</button>
+               <div key={item.id}>
+                    <h2 style={{display :"inline-block", marginRight:" 10px" }}> {item.value}</h2>
+                    <button  onClick={()=> handleDelete(item.id)}>Delete</button>
+               </div>
             </>
         })}
     </>

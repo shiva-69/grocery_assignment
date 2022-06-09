@@ -7,10 +7,10 @@ const GroceryInput = ({handleAdd}) => {
         const {value} = e.target;
         setInputValue(value);
     }
-    
+
   return (<>
     <input type="text" placeholder='Write Grocery' onChange={handleInputValue} value={inputvalue}/>
-    <button onClick={()=> handleAdd(inputvalue)}> Add item</button>
+    <button onClick={() => {handleAdd(inputvalue)}} > Add item</button>
     </>
   )
 }

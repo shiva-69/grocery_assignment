@@ -26,7 +26,7 @@ const Grocery = () => {
 
     return <>
     <h1>Grocery</h1>
-    <GroceryInput handleAdd={handleAdd}/>
+    <GroceryInput handleAdd={handleAdd} />
     <GroceryList list ={list} handleDelete={handleDelete}/>
     </>
 
