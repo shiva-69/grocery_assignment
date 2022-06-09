@@ -1,18 +1,18 @@
 import React from 'react'
 
-const GroceryList = ({list, handleDelete}) => {
+const GroceryList = ({ list, handleDelete }) => {
   return (
     <>
-        {list.map((item) =>{
-            return(
-                <div key={item.id}>
-                <h2 style={{display :"inline-block", marginRight:" 10px" }}> {item.value}</h2>
-                <button  onClick={()=> handleDelete(item.id)}>Delete</button>
-                </div>
+      {list.map((item) => {
+        return (
+          <div key={item.id}>
+            <h2 style={{ display: "inline-block", marginRight: " 10px" }}> {item.value}</h2>
+            <button onClick={() => handleDelete(item.id)}>Delete</button>
+          </div>
         )
-        })}
+      })}
     </>
   )
 }
 
-export {GroceryList}
+export { GroceryList }

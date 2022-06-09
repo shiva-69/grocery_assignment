@@ -1,12 +1,17 @@
-input{
+input {
     width: 20%;
     height: 2rem;
     font-size: 120%;
     outline: none;
+    border: 1px solid black;
 }
-button{
-    height: 2.4rem;
-    border: 2px solid black;
+
+button {
+    height: 2.3rem;
+    border: 1px solid black;
     border-radius: 5px;
     margin-left: 1%;
+    cursor: pointer;
+    background-color: rgb(170, 170, 243);
+    font-weight: 500;
 }
