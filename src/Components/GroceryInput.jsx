@@ -1,5 +1,6 @@
 import React from 'react'
 import "../styles/GroceryInput.css"
+
 const GroceryInput = ({ handleAdd }) => {
   const [inputvalue, setInputValue] = React.useState("");
 
@@ -7,10 +8,13 @@ const GroceryInput = ({ handleAdd }) => {
     const { value } = e.target;
     setInputValue(value);
   }
-
+  const handleClickButton = () => {
+    handleAdd(inputvalue);
+    setInputValue("");
+  }
   return (<>
     <input type="text" placeholder='Write Grocery' onChange={handleInputValue} value={inputvalue} />
-    <button onClick={() => { handleAdd(inputvalue) }} > Add item</button>
+    <button onClick={handleClickButton} > Add item</button>
   </>
   )
 }
